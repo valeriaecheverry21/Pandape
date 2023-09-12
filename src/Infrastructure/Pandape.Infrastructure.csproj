@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Persistence\DataBase\Migrations\20230324181323_ModifyFieldsToVarchar.cs" />
+    <Compile Remove="Persistence\DataBase\Migrations\20230324181323_ModifyFieldsToVarchar.Designer.cs" />
+    <Compile Remove="Persistence\DataBase\Migrations\20230324184757_ModifyTypesToVarchar.cs" />
+    <Compile Remove="Persistence\DataBase\Migrations\20230324184757_ModifyTypesToVarchar.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.32">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Pandape.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

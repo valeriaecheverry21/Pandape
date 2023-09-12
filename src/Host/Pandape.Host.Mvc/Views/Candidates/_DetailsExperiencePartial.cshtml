@@ -1,0 +1,64 @@
+﻿@model Pandape.Host.Mvc.ViewModels.DetailsCandidateAndExperiencesViewModel
+
+@{
+    ViewData["Title"] = "Details Candidate Experience";
+}
+
+
+<h5>Candidate Experiences</h5>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CandidateExperience.Company)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CandidateExperience.Job)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CandidateExperience.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CandidateExperience.Salary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CandidateExperience.BeginDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CandidateExperience.InsertDate)
+            </th>
+            <th>
+                @Html.DisplayName("Actions")
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.CandidateExperiences)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Company)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Job)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Salary)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BeginDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InsertDate)
+                </td>
+                <td>
+                    <a asp-controller = "CandidateExperiences" asp-action="Edit" asp-route-id="@Model.Candidate.Id"></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

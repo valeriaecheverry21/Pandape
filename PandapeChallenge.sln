@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D5C069B-1D9D-4BA4-A001-C3B4AA53BFB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pandape.Infrastructure", "src\Infrastructure\Pandape.Infrastructure.csproj", "{804A3EF8-639F-4DA6-B1DB-4FAE85C5E05C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pandape.Domain", "src\Domain\Pandape.Domain.csproj", "{8A8F984D-407B-47A4-A6D0-797DE9EB63AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pandape.Application", "src\Application\Pandape.Application.csproj", "{73963136-50E0-4337-BED5-AFB83AC087CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pandape.Host.Mvc", "src\Host\Pandape.Host.Mvc\Pandape.Host.Mvc.csproj", "{45E38E1E-320F-41AC-98A1-4D2FF7F30584}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{804A3EF8-639F-4DA6-B1DB-4FAE85C5E05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804A3EF8-639F-4DA6-B1DB-4FAE85C5E05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804A3EF8-639F-4DA6-B1DB-4FAE85C5E05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804A3EF8-639F-4DA6-B1DB-4FAE85C5E05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8F984D-407B-47A4-A6D0-797DE9EB63AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8F984D-407B-47A4-A6D0-797DE9EB63AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8F984D-407B-47A4-A6D0-797DE9EB63AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8F984D-407B-47A4-A6D0-797DE9EB63AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73963136-50E0-4337-BED5-AFB83AC087CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73963136-50E0-4337-BED5-AFB83AC087CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73963136-50E0-4337-BED5-AFB83AC087CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73963136-50E0-4337-BED5-AFB83AC087CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E38E1E-320F-41AC-98A1-4D2FF7F30584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E38E1E-320F-41AC-98A1-4D2FF7F30584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E38E1E-320F-41AC-98A1-4D2FF7F30584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E38E1E-320F-41AC-98A1-4D2FF7F30584}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{804A3EF8-639F-4DA6-B1DB-4FAE85C5E05C} = {8D5C069B-1D9D-4BA4-A001-C3B4AA53BFB9}
+		{8A8F984D-407B-47A4-A6D0-797DE9EB63AA} = {8D5C069B-1D9D-4BA4-A001-C3B4AA53BFB9}
+		{73963136-50E0-4337-BED5-AFB83AC087CF} = {8D5C069B-1D9D-4BA4-A001-C3B4AA53BFB9}
+		{45E38E1E-320F-41AC-98A1-4D2FF7F30584} = {8D5C069B-1D9D-4BA4-A001-C3B4AA53BFB9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {438CBA28-09AF-4F8B-85B6-AA0FCAC0CF21}
+	EndGlobalSection
+EndGlobal
